@@ -28,7 +28,7 @@ class Responsive extends StatelessWidget {
 
     return PixelPerfect(
       scale: scale,
-      assetPath: 'assets/mockups/ui-mockup.png',
+      // assetPath: 'assets/mockups/ui-mockup.png',
       child: child,
     );
   }
