@@ -4,7 +4,7 @@ import 'package:pixel_perfect/pixel_perfect.dart';
 const mockupWidth = 360;
 
 /// use to set responsiveness according to the scale of device
-/// 
+///
 class Responsive extends StatelessWidget {
   const Responsive({
     Key? key,
@@ -27,10 +27,9 @@ class Responsive extends StatelessWidget {
     textScaleFactor = width / mockupWidth;
 
     return PixelPerfect(
-      // scale: scale,
-      // assetPath: 'assets/mockups/ui-mockup.png',
+      scale: scale,
+      assetPath: 'assets/mockups/ui-mockup.png',
       child: child,
     );
   }
 }
-

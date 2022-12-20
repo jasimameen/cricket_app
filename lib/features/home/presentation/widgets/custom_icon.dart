@@ -6,17 +6,29 @@ class CustomIcon extends StatelessWidget {
     super.key,
     this.size,
     this.color,
+    this.borderColor,
   });
   final IconData? icon;
   final double? size;
+  final Color? borderColor;
 
   final Color? color;
   @override
   Widget build(BuildContext context) {
-    return Icon(
-      icon,
-      size: size,
-      color: color,
+    return Stack(
+      alignment: AlignmentDirectional.center,
+      children: [
+        Icon(
+          icon,
+          size: size != null ? size! + 2 : 26,
+          color: borderColor ?? Colors.transparent,
+        ),
+        Icon(
+          icon,
+          size: size,
+          color: color,
+        ),
+      ],
     );
   }
 }

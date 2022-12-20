@@ -33,18 +33,31 @@ class CustomButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.only(bottom: 1, right: 1),
-      decoration: const BoxDecoration(
-        border: Border(
-          right: BorderSide(width: 1),
-          bottom: BorderSide(width: 1),
-        ),
+      decoration: BoxDecoration(
+        // border: Border(
+        //   right: BorderSide(width: 1),
+        //   bottom: BorderSide(width: 1),
+        // ),
+        boxShadow: const [
+          BoxShadow(
+            blurStyle: BlurStyle.inner,
+            offset: Offset(1.5, 1.5),
+          ),
+          BoxShadow(
+            color: Colors.white,
+            blurStyle: BlurStyle.inner,
+            offset: Offset(0.5, 0.5),
+          ),
+        ],
+        // border: Border.all(),
+        borderRadius: BorderRadius.circular(8),
       ),
       child: Container(
         width: width,
         height: height,
         padding: padding ?? const EdgeInsets.all(5),
         decoration: BoxDecoration(
-          color: color,
+          color: color ?? Colors.white,
           border: Border.all(),
           borderRadius: BorderRadius.circular(8),
         ),

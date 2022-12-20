@@ -2,7 +2,6 @@
 import 'package:flutter/cupertino.dart';
 
 import 'package:cricket_app/features/home/presentation/widgets/custom_text.dart';
-import 'package:flutter/material.dart';
 
 class StatsCard extends StatelessWidget {
   const StatsCard({
@@ -39,14 +38,11 @@ class StatsCard extends StatelessWidget {
 
           // trailing icon
           const Spacer(),
-          const Positioned(
-            right: 0,
-            child: Icon(
-              CupertinoIcons.info,
-              size: 18,
-              color: defaultColor,
-            ),
-          ),
+           const Icon(
+             CupertinoIcons.info,
+             size: 18,
+             color: defaultColor,
+           ),
         ],
       ),
     );

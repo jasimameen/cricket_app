@@ -3,6 +3,7 @@ import 'package:cricket_app/features/core/constants/constands.dart';
 import 'package:cricket_app/features/core/responsive/responsive.dart';
 import 'package:cricket_app/features/home/presentation/widgets/custom_button.dart';
 import 'package:cricket_app/features/home/presentation/widgets/custom_icon.dart';
+import 'package:cricket_app/features/home/presentation/widgets/custom_image.dart';
 import 'package:cricket_app/features/home/presentation/widgets/custom_text.dart';
 import 'package:cricket_app/features/home/presentation/widgets/link_field.dart';
 import 'package:cricket_app/features/home/presentation/widgets/stats_card.dart';
@@ -66,8 +67,12 @@ class _HeadSection extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           // icon
-          const CustomIcon(CupertinoIcons.star_fill,
-              color: Colors.yellow, size: 30),
+          const CustomIcon(
+            CupertinoIcons.star_fill,
+            color: Colors.yellow,
+            size: 30,
+            borderColor: Colors.black,
+          ),
 
           // title and subtitle
           VertcalText(
@@ -120,12 +125,12 @@ class _PlayerStats extends StatelessWidget {
               // image
               ClipRRect(
                 borderRadius: BorderRadius.circular(10),
-                child: Image.asset(
+                child: const CustomImage(
                   Assets.victory,
                   height: 120,
                   width: 120,
                   fit: BoxFit.cover,
-                  scale: Responsive.scale,
+                  showEditButton: true,
                 ),
               ),
 
@@ -193,13 +198,14 @@ class _TeamData extends StatelessWidget {
               children: [
                 Expanded(child: CustomText(data['head']!)),
                 Expanded(
-                    child: CustomText(
-                  data["data"]!,
-                  style: CustomText.defaultStyle.copyWith(
-                    color: Colors.lightBlue,
-                    fontWeight: FontWeight.normal,
+                  child: CustomText(
+                    data["data"]!,
+                    style: CustomText.defaultStyle.copyWith(
+                      color: Colors.lightBlue,
+                      fontWeight: FontWeight.normal,
+                    ),
                   ),
-                )),
+                ),
               ],
             ),
             if (data != teamDataFields.last) const SizedBox(height: 25),

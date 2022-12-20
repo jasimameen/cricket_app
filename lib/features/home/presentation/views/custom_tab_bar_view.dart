@@ -1,18 +1,17 @@
 import 'package:cricket_app/features/home/presentation/views/acheivements_view.dart';
-import 'package:cricket_app/features/home/presentation/widgets/custom_text.dart';
+import 'package:cricket_app/features/home/presentation/views/details_view.dart';
 import 'package:flutter/material.dart';
 
 class CustomTabBarView extends StatelessWidget {
   const CustomTabBarView({super.key});
 
   final tabs = const [
-    AcheivementsView(),
+    DetailsView(),
     AcheivementsView(),
   ];
 
   @override
   Widget build(BuildContext context) {
-    const border = BorderSide(width: 1, color: Colors.grey);
     return SizedBox(
       height: 700,
       child: DefaultTabController(
@@ -21,25 +20,56 @@ class CustomTabBarView extends StatelessWidget {
         child: Column(
           children: [
             // tab bar
-            TabBar(
-              isScrollable: true,
-              labelStyle:
-                  const TextStyle(fontSize: 18, color: Colors.lightBlue),
-              labelPadding: const EdgeInsets.symmetric(horizontal: 50),
-              unselectedLabelColor: Colors.black,
-              indicatorWeight: 0,
-              indicator: BoxDecoration(
-                  border: Border.all(),
-                  borderRadius: BorderRadius.circular(10)),
-              tabs: const [
-                Tab(text: 'Details'),
-                Tab(text: 'Achievements'),
-              ],
-            ),
+            const _TabBar(),
 
             // views
             Expanded(child: TabBarView(children: tabs)),
           ],
+        ),
+      ),
+    );
+  }
+}
+
+class _TabBar extends StatelessWidget {
+  const _TabBar({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return const DecoratedBox(
+      decoration: BoxDecoration(
+        border: Border(bottom: BorderSide(color: Colors.grey, width: 0.8)),
+      ),
+      child: Padding(
+        padding: EdgeInsets.only(top: 2),
+        child: DecoratedBox(
+          decoration: BoxDecoration(
+            border: Border(
+              bottom: BorderSide(color: Colors.grey, width: 0.8),
+            ),
+          ),
+          child: TabBar(
+            isScrollable: true,
+            labelColor: Colors.blue,
+            labelStyle: TextStyle(fontSize: 18),
+            labelPadding: EdgeInsets.symmetric(horizontal: 50),
+            unselectedLabelColor: Colors.grey,
+            indicatorWeight: 0,
+            indicator: BoxDecoration(
+              border: Border(
+                top: BorderSide(),
+                left: BorderSide(),
+                right: BorderSide(width: 3),
+                bottom: BorderSide(color: Colors.white, width: 2),
+              ),
+            ),
+            tabs: [
+              Tab(text: 'Details'),
+              Tab(text: 'Achievements'),
+            ],
+          ),
         ),
       ),
     );

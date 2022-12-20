@@ -1,6 +1,5 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 
-import 'package:cricket_app/features/home/presentation/widgets/custom_icon.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -8,6 +7,7 @@ import 'package:cricket_app/features/core/constants/assets.dart';
 import 'package:cricket_app/features/core/responsive/responsive.dart';
 
 import '../widgets/custom_avathar.dart';
+import '../widgets/custom_image.dart';
 
 class HeaderView extends StatelessWidget {
   const HeaderView({super.key});
@@ -19,13 +19,13 @@ class HeaderView extends StatelessWidget {
       children: [
         // Image and rating
         Column(
-          children: [
+          children: const [
             // Image
-            Image.asset(
+            CustomImage(
               Assets.criketer,
               height: 255,
               fit: BoxFit.cover,
-              scale: Responsive.scale,
+              showEditButton: true,
             ),
 
             // gap
@@ -43,4 +43,3 @@ class HeaderView extends StatelessWidget {
     );
   }
 }
-
