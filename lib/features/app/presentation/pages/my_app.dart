@@ -1,4 +1,5 @@
 import 'package:cricket_app/features/core/responsive/responsive.dart';
+import 'package:cricket_app/features/core/utils/snack_bar.dart';
 import 'package:cricket_app/features/home/presentation/pages/home_page.dart';
 import 'package:flutter/material.dart';
 
@@ -9,7 +10,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      scaffoldMessengerKey: AppMessegin.instance,
       title: 'ESPAR Demo App',
+      
       theme: ThemeData(
         primarySwatch: Colors.yellow,
       ),
