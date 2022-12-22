@@ -1,13 +1,12 @@
-import 'package:cricket_app/features/core/constants/assets.dart';
-import 'package:cricket_app/features/core/constants/constands.dart';
-import 'package:cricket_app/features/core/responsive/responsive.dart';
-import 'package:cricket_app/features/home/presentation/widgets/custom_button.dart';
-import 'package:cricket_app/features/home/presentation/widgets/custom_icon.dart';
-import 'package:cricket_app/features/home/presentation/widgets/custom_image.dart';
-import 'package:cricket_app/features/home/presentation/widgets/custom_text.dart';
-import 'package:cricket_app/features/home/presentation/widgets/link_field.dart';
-import 'package:cricket_app/features/home/presentation/widgets/stats_card.dart';
-import 'package:cricket_app/features/home/presentation/widgets/vertical_text.dart';
+import '../../../core/constants/assets.dart';
+import '../../../core/constants/constands.dart';
+import '../widgets/custom_button.dart';
+import '../widgets/custom_icon.dart';
+import '../widgets/custom_image.dart';
+import '../widgets/custom_text.dart';
+import '../widgets/link_field.dart';
+import '../widgets/stats_card.dart';
+import '../widgets/vertical_text.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 

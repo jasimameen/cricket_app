@@ -1,5 +1,5 @@
-import 'package:cricket_app/features/home/presentation/views/acheivements_view.dart';
-import 'package:cricket_app/features/home/presentation/views/details_view.dart';
+import 'acheivements_view.dart';
+import 'details_view.dart';
 import 'package:flutter/material.dart';
 
 class CustomTabBarView extends StatelessWidget {

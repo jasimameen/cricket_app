@@ -1,5 +1,5 @@
-import 'package:cricket_app/features/core/constants/assets.dart';
-import 'package:cricket_app/features/home/presentation/widgets/custom_avathar.dart';
+import '../../../core/constants/assets.dart';
+import 'custom_avathar.dart';
 import 'package:flutter/material.dart';
 
 const empty =  <BoxShadow>[];

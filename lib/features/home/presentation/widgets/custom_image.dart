@@ -1,4 +1,4 @@
-import 'package:cricket_app/features/home/presentation/widgets/custom_icon.dart';
+import 'custom_icon.dart';
 import 'package:flutter/material.dart';
 
 import '../../../core/responsive/responsive.dart';

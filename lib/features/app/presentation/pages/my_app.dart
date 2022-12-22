@@ -1,6 +1,6 @@
-import 'package:cricket_app/features/core/responsive/responsive.dart';
-import 'package:cricket_app/features/core/utils/snack_bar.dart';
-import 'package:cricket_app/features/home/presentation/pages/home_page.dart';
+import '../../../core/responsive/responsive.dart';
+import '../../../core/utils/snack_bar.dart';
+import '../../../home/presentation/pages/home_page.dart';
 import 'package:flutter/material.dart';
 
 /// this is the root of the app UI

@@ -1,5 +1,5 @@
-import 'package:cricket_app/features/home/presentation/widgets/custom_text.dart';
-import 'package:cricket_app/features/home/presentation/widgets/stacked_images.dart';
+import 'custom_text.dart';
+import 'stacked_images.dart';
 import 'package:flutter/material.dart';
 
 class InteractionsWidget extends StatelessWidget {

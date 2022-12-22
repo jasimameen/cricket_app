@@ -1,5 +1,5 @@
-import 'package:cricket_app/features/home/presentation/widgets/custom_button.dart';
-import 'package:cricket_app/features/home/presentation/widgets/custom_icon.dart';
+import '../widgets/custom_button.dart';
+import '../widgets/custom_icon.dart';
 import 'package:flutter/material.dart';
 
 import 'achevements_card.dart';

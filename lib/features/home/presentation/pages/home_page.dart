@@ -1,8 +1,8 @@
-import 'package:cricket_app/features/home/presentation/views/bottom_nav_bar.dart';
-import 'package:cricket_app/features/home/presentation/views/custom_tab_bar_view.dart';
-import 'package:cricket_app/features/home/presentation/views/header_view.dart';
-import 'package:cricket_app/features/home/presentation/views/post_card.dart';
-import 'package:cricket_app/features/home/presentation/widgets/custom_text.dart';
+import '../views/bottom_nav_bar.dart';
+import '../views/custom_tab_bar_view.dart';
+import '../views/header_view.dart';
+import '../views/post_card.dart';
+import '../widgets/custom_text.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 

@@ -1,10 +1,8 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 
+import 'package:cricket_app/features/core/constants/assets.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
-import 'package:cricket_app/features/core/constants/assets.dart';
-import 'package:cricket_app/features/core/responsive/responsive.dart';
 
 import '../widgets/custom_avathar.dart';
 import '../widgets/custom_image.dart';
